@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="javascript.js"></script>
+
+</head>
+<body>
+    <header class="header">
+    <h1>Quiz</h1>
+    <p id="startQuiz">Click start to begin</p>
+    <h2 class="timer">Time: <span id="timer"></span></h2>
+    </header>
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+                </div>
+            </div>
+       
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+        <div id="finish" class="hide">
+            <h1>Finished</h1>
+            <p>Your Final Score Is:&nbsp;<span id="score"></span></p>
+            <form method="POST">
+                <div class="input">
+                    <label for="initials-label">enter initials</label>
+                    <input type="text" id="initials" placeholder="ABC"/>
+                    <button id="save-btn" class="btn">save</button>
+                </div>
+        </div>
+    
+        <div id="highscore" class="hide">
+            <h1>Highscores</h1>
+            <div id="highScoreList"></div>
+            <button id="restart" class="btn">Restart</button>
+            <button id="clear-scores" class="btn">Clear Highscores</button>
+            <p id="clear"></p>
+        <div>
+    </div>
+    
+</body>
+</html>
